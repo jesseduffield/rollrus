@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/jesseduffield/roll"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
-	"github.com/stvp/roll"
 )
 
 func ExampleSetupLogging() {
