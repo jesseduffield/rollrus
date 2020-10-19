@@ -1,7 +1,16 @@
 language: go
+arch:
+ - amd64
+ - ppc64le
 go:
 - 1.10.8
 - 1.11.6
 - 1.12.1
+# Disable GO version 1.10.8
+jobs:
+  exclude:
+    - arch: ppc64le
+      go: 1.10.8
+
 script:
 - go test -v -race ./...
